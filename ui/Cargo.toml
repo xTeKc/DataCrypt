@@ -1,0 +1,20 @@
+[package]
+name = "ui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+core_app = { path = "../core_app" }
+anyhow = "1.0.57"
+iced = { version= "0.4.2", features = ["tokio", "svg", "glow",] }
+iced_native = "0.5.0"
+iced_style = "0.4.0"
+image = "0.24.2"
+tracing = "0.1.35"
+
+[target.'cfg(unix)'.dependencies]
+
+
+[target.'cfg(windows)'.dependencies]
